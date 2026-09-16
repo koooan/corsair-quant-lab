@@ -4,12 +4,13 @@ Learn to build software by shipping one financial-AI experiment every week.
 
 **Cadence:** weekly releases, with the current scope in the roadmap. **Time budget:** 6–8 hours a week. **Format:** public GitHub release, executed Jupyter notebook, interactive marimo notebook, and a short demo/readout.
 
-The capstone is a trained fixed-income research specialist, then a cross-asset research prototype, with asset-class distillation experiments. We will compare a specialist that delegates difficult work with a specialist that completes the same tasks without a frontier model. Neither path is presumed to win.
+The capstone is **Multi-Asset Analyst**: a proposed investment-research assistant spanning fixed income, currencies, and commodities, starting with fixed-income use cases and later exploring asset-class distillation. We will compare a specialist that delegates difficult work with a specialist that completes the same tasks without a frontier model. Neither path is presumed to win.
 
 ## Start here
 
 - [Weekly roadmap](docs/ROADMAP.md)
 - [Bridgewater: public evidence and experiments](docs/BRIDGEWATER.md)
+- [Multi-Asset Analyst goals and TypeSafe experiment](docs/MULTI_ASSET_ANALYST.md)
 - [Capstone design and promotion gates](docs/CAPSTONE.md)
 - [Evaluation rules](docs/EVALUATION.md)
 - [Project roster and access limits](docs/ROSTER.md)

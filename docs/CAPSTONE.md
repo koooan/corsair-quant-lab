@@ -1,4 +1,6 @@
-# Capstone: fixed income, then cross asset, then specialists
+# Multi-Asset Analyst: capstone design
+
+See [product goals and proposed TypeSafe experiment](MULTI_ASSET_ANALYST.md). These are research targets, not completed achievements.
 
 ## Product target
 
@@ -35,7 +37,7 @@ Measure injected-error detection, false rejection, correct escalation, unresolve
 
 **Fixed income v0:** select a small open-weight base only after evaluating licenses, hardware and baseline skills. Build a reviewed dataset of domain questions, numerical exercises, code tasks, tool-use examples, critique tasks, and relevance labels. Train a LoRA/QLoRA adapter, mixing in general quantitative tasks. Compare base, retrieval-only, and tuned variants.
 
-**Cross asset v0:** continue with a balanced multi-task corpus covering common economic mechanisms and asset-specific conventions. Keep fixed-income retention tests. Record sampling proportions and evaluate per asset; an improved overall average cannot hide a damaged rates specialist.
+**Multi-Asset Analyst v0:** continue with a balanced multi-task corpus covering common economic mechanisms and asset-specific conventions. Keep fixed-income retention tests. Record sampling proportions and evaluate per asset; an improved overall average cannot hide a damaged rates specialist.
 
 **Distillation:** generate explicit answers, concise rationales, runnable code and tool records using permitted teacher outputs. Retain examples only after independent checks or expert review. Train rates and credit adapters/students first; preserve shared quantitative tasks. This is a separate training experiment, not merely different system prompts. Keep an untouched student test set, track teacher errors, and check model/provider terms before retaining training material.
 

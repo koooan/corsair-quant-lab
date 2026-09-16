@@ -5,8 +5,8 @@ Budget: 6–8 hours per week. Ship public code with Jupyter and marimo notebooks
 | Week | Project | Scope and status |
 |---|---|---|
 | 1 | Research foundation and Curvy-CUSIPs | Notebook foundation released; complete Curvy-CUSIPs fork created at https://github.com/koooan/Curvy-CUSIPs. Explore the existing project before extending it. |
-| 2 | Cross-asset analyst LLM with RLHF | Train an initial analyst prototype from human feedback. Maintain a small untouched evaluation set before training; distinguish actual RLHF from other preference-training methods. |
-| 2.5 | Cross-asset research benchmark | Expand evaluation across assets and research skills. The meaning of “for each research” remains to be clarified. |
+| 2 | Multi-Asset Analyst with RLHF | Train an initial analyst prototype from human feedback. Maintain a small untouched evaluation set before training; distinguish actual RLHF from other preference-training methods. |
+| 2.5 | Multi-Asset Research Benchmark | Expand evaluation across assets and research skills. The meaning of “for each research” remains to be clarified. |
 | 3 | Sharpe hacking project | Refer to the user's Claude context. That context is not available in this workspace; detailed scope is pending it. |
 | 4 | Kalshi / CME / Polymarket FOMC arbitrage strategy | Research and test the proposed strategy. Establish comparable contract outcomes, settlement rules, executable prices, costs, and hedge exposure before claiming an arbitrage. No live trading is scheduled. |
 
