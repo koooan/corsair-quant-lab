@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+__marimo__/
+.env
+.env.*
+!.env.example
+.DS_Store
+data/private/
+models/
+artifacts/*.html
+artifacts/*.png
+artifacts/*.csv
+.jupyter/

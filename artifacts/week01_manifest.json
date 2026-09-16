@@ -1,0 +1,24 @@
+{
+  "experiment_id": "week01_foundation",
+  "status": "completed_baselines_only",
+  "created_at_utc": "2026-09-16T00:32:02.420241+00:00",
+  "python": "3.13.5",
+  "dataset_sha256": "867ad33d869c3a34cad8e928489655a20f0822ed7abec402bdc7ee5c093a1ace",
+  "horizon_observed_sessions": 1,
+  "evaluation_start": "2024-01-01",
+  "evaluation_end": "2024-12-31",
+  "window": 20,
+  "models": [
+    "last_observed_yield",
+    "trailing_mean_change"
+  ],
+  "seed": null,
+  "seed_note": "Deterministic; no stochastic training",
+  "paid_api_cost_usd": 0,
+  "hardware": "arm64",
+  "limitations": [
+    "Current snapshot, not historical vintages",
+    "Development only",
+    "No AI model runs"
+  ]
+}

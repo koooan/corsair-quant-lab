@@ -1,0 +1,23 @@
+name: Notebook checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  notebooks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.13'
+      - run: uv sync --locked
+      - run: uv run pytest -q
+        env:
+          MPLBACKEND: Agg
+      - run: uv run python scripts/build_release.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: week01-notebook-previews
+          path: artifacts/

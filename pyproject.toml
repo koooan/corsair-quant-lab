@@ -1,0 +1,13 @@
+[project]
+name = "corsair-quant-lab"
+version = "0.1.0"
+description = "Weekly experiments in financial AI, forecasting, and quantitative research"
+requires-python = ">=3.11,<3.14"
+dependencies = ["pandas>=2.2", "matplotlib>=3.9", "marimo>=0.19", "nbformat>=5.10", "nbclient>=0.10", "nbconvert>=7.16", "ipykernel>=6.29", "jupyterlab>=4.3"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

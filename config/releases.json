@@ -1,0 +1,82 @@
+[
+  {
+    "week": 1,
+    "ship_date": "2026-09-18",
+    "status": "planned"
+  },
+  {
+    "week": 2,
+    "ship_date": "2026-09-25",
+    "status": "planned"
+  },
+  {
+    "week": 3,
+    "ship_date": "2026-10-02",
+    "status": "planned"
+  },
+  {
+    "week": 4,
+    "ship_date": "2026-10-09",
+    "status": "planned"
+  },
+  {
+    "week": 5,
+    "ship_date": "2026-10-16",
+    "status": "planned"
+  },
+  {
+    "week": 6,
+    "ship_date": "2026-10-23",
+    "status": "planned"
+  },
+  {
+    "week": 7,
+    "ship_date": "2026-10-30",
+    "status": "planned"
+  },
+  {
+    "week": 8,
+    "ship_date": "2026-11-06",
+    "status": "planned"
+  },
+  {
+    "week": 9,
+    "ship_date": "2026-11-13",
+    "status": "planned"
+  },
+  {
+    "week": 10,
+    "ship_date": "2026-11-20",
+    "status": "planned"
+  },
+  {
+    "week": 11,
+    "ship_date": "2026-11-27",
+    "status": "planned"
+  },
+  {
+    "week": 12,
+    "ship_date": "2026-12-04",
+    "status": "planned"
+  },
+  {
+    "week": 13,
+    "ship_date": "2026-12-11",
+    "status": "planned"
+  },
+  {
+    "week": 14,
+    "ship_date": "2026-12-18",
+    "status": "planned"
+  },
+  {
+    "week": 15,
+    "ship_date": "2026-12-25",
+    "status": "planned"
+  },
+  {
+    "week": 16,
+    "ship_date": "2026-12-31",
+    "status": "planned"
+  }
+]

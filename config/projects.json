@@ -1,0 +1,211 @@
+[
+  {
+    "id": "finbert",
+    "name": "FinBERT",
+    "track": "text",
+    "week": 2,
+    "source": "https://huggingface.co/ProsusAI/finbert",
+    "use_case": "Financial sentiment; issuer-news transfer",
+    "access": "Weights available; inspect checkpoint terms",
+    "status": "not_run",
+    "reviewed_on": "2026-09-15"
+  },
+  {
+    "id": "fingpt",
+    "name": "FinGPT",
+    "track": "text",
+    "week": 2,
+    "source": "https://github.com/AI4Finance-Foundation/FinGPT",
+    "use_case": "Sentiment and relevance-transfer experiment",
+    "access": "Select one adapter; base-model terms also apply",
+    "status": "not_run",
+    "reviewed_on": "2026-09-15"
+  },
+  {
+    "id": "fin-r1",
+    "name": "Fin-R1",
+    "track": "reasoning",
+    "week": 3,
+    "source": "https://huggingface.co/SUFE-AIFLM-Lab/Fin-R1",
+    "use_case": "Verified numerical QA and code tasks",
+    "access": "Open checkpoint; GPU feasibility check",
+    "status": "not_run",
+    "reviewed_on": "2026-09-15"
+  },
+  {
+    "id": "bloomberggpt",
+    "name": "BloombergGPT",
+    "track": "reference",
+    "week": 3,
+    "source": "https://arxiv.org/abs/2303.17564",
+    "use_case": "Pretraining design and evaluation critique",
+    "access": "No downloadable checkpoint identified; study only",
+    "status": "reference_only",
+    "reviewed_on": "2026-09-15"
+  },
+  {
+    "id": "chronos",
+    "name": "Chronos-2",
+    "track": "forecasting",
+    "week": 4,
+    "source": "https://github.com/amazon-science/chronos-forecasting",
+    "use_case": "Yield changes and macro series",
+    "access": "Public code/weights; pin revision",
+    "status": "not_run",
+    "reviewed_on": "2026-09-15"
+  },
+  {
+    "id": "timegpt",
+    "name": "TimeGPT",
+    "track": "forecasting",
+    "week": 4,
+    "source": "https://github.com/Nixtla/nixtla",
+    "use_case": "Same target windows as Chronos",
+    "access": "Hosted API; credentials and spend cap required",
+    "status": "not_run",
+    "reviewed_on": "2026-09-15"
+  },
+  {
+    "id": "timesfm",
+    "name": "TimesFM",
+    "track": "forecasting",
+    "week": 5,
+    "source": "https://github.com/google-research/timesfm",
+    "use_case": "Univariate and related-series forecasting",
+    "access": "3.0 weights noncommercial/nonproduction; 2.5 Apache-2.0",
+    "status": "not_run",
+    "reviewed_on": "2026-09-15"
+  },
+  {
+    "id": "moirai",
+    "name": "Moirai",
+    "track": "forecasting",
+    "week": 5,
+    "source": "https://github.com/SalesforceAIResearch/uni2ts",
+    "use_case": "Same numerical benchmark",
+    "access": "Pin checkpoint and inspect version capabilities",
+    "status": "not_run",
+    "reviewed_on": "2026-09-15"
+  },
+  {
+    "id": "ttm",
+    "name": "Granite TTM",
+    "track": "forecasting",
+    "week": 5,
+    "source": "https://github.com/ibm-granite/granite-tsfm",
+    "use_case": "Lightweight numerical forecasting",
+    "access": "Select daily-frequency-compatible checkpoint",
+    "status": "not_run",
+    "reviewed_on": "2026-09-15"
+  },
+  {
+    "id": "kronos",
+    "name": "Kronos",
+    "track": "forecasting",
+    "week": 6,
+    "source": "https://github.com/shiyu-coder/Kronos",
+    "use_case": "Liquid-instrument OHLCV forecast",
+    "access": "Not a bond convention or cash-flow model",
+    "status": "not_run",
+    "reviewed_on": "2026-09-15"
+  },
+  {
+    "id": "tabpfn",
+    "name": "TabPFN",
+    "track": "tabular",
+    "week": 6,
+    "source": "https://github.com/PriorLabs/TabPFN",
+    "use_case": "Structured macro/issuer observations",
+    "access": "Check chosen version license and data limits",
+    "status": "not_run",
+    "reviewed_on": "2026-09-15"
+  },
+  {
+    "id": "nhits",
+    "name": "N-HiTS",
+    "track": "trainable",
+    "week": 7,
+    "source": "https://github.com/Nixtla/neuralforecast",
+    "use_case": "Small-budget supervised forecast",
+    "access": "Architecture to train, not a financial checkpoint",
+    "status": "not_run",
+    "reviewed_on": "2026-09-15"
+  },
+  {
+    "id": "tft",
+    "name": "Temporal Fusion Transformer",
+    "track": "trainable",
+    "week": 7,
+    "source": "https://github.com/Nixtla/neuralforecast",
+    "use_case": "Covariate-informed forecast",
+    "access": "Architecture to train; fixed tuning budget",
+    "status": "not_run",
+    "reviewed_on": "2026-09-15"
+  },
+  {
+    "id": "patchtst",
+    "name": "PatchTST",
+    "track": "trainable",
+    "week": 7,
+    "source": "https://github.com/Nixtla/neuralforecast",
+    "use_case": "Patch-based sequence forecast",
+    "access": "Architecture to train; fixed tuning budget",
+    "status": "not_run",
+    "reviewed_on": "2026-09-15"
+  },
+  {
+    "id": "qlib",
+    "name": "Qlib",
+    "track": "research_system",
+    "week": 8,
+    "source": "https://github.com/microsoft/qlib",
+    "use_case": "One reproducible research/backtest pipeline",
+    "access": "Equity-oriented examples; adapt assumptions explicitly",
+    "status": "not_run",
+    "reviewed_on": "2026-09-15"
+  },
+  {
+    "id": "rd-agent",
+    "name": "RD-Agent",
+    "track": "research_system",
+    "week": 8,
+    "source": "https://github.com/microsoft/RD-Agent",
+    "use_case": "One factor proposal/test loop",
+    "access": "LLM/API access; isolated execution and fixed budget",
+    "status": "not_run",
+    "reviewed_on": "2026-09-15"
+  },
+  {
+    "id": "finrobot",
+    "name": "FinRobot",
+    "track": "research_system",
+    "week": 9,
+    "source": "https://github.com/AI4Finance-Foundation/FinRobot",
+    "use_case": "Issuer memo and citation support",
+    "access": "External providers may require credentials",
+    "status": "not_run",
+    "reviewed_on": "2026-09-15"
+  },
+  {
+    "id": "finrl",
+    "name": "FinRL",
+    "track": "policy",
+    "week": 9,
+    "source": "https://github.com/AI4Finance-Foundation/FinRL",
+    "use_case": "Tiny simulated allocation task after costs",
+    "access": "Training framework; no live trading",
+    "status": "not_run",
+    "reviewed_on": "2026-09-15"
+  },
+  {
+    "id": "aia",
+    "name": "Bridgewater AIA",
+    "track": "reference",
+    "week": 10,
+    "source": "https://arxiv.org/abs/2511.07678",
+    "use_case": "Independent supervision/calibration and relevance experiments",
+    "access": "Public methods only; private system unavailable",
+    "status": "reference_only",
+    "reviewed_on": "2026-09-15"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "source": "Federal Reserve Board H.15 via FRED",
+  "source_urls": [
+    "https://fred.stlouisfed.org/series/DGS2",
+    "https://fred.stlouisfed.org/series/DGS10"
+  ],
+  "download_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS2,DGS10&cosd=2020-01-01&coed=2024-12-31",
+  "retrieved_at_utc": "2026-09-16T00:26:50.739858+00:00",
+  "observation_start": "2020-01-01",
+  "observation_end": "2024-12-31",
+  "rows": 1305,
+  "units": "percent",
+  "transformations": [
+    "Filtered downloaded CSV to 2020-01-01 through 2024-12-31 inclusive; no values changed",
+    "Normalized CSV line endings to LF for cross-platform hash stability"
+  ],
+  "download_sha256": "dbff45ed8151071453785594d35084e518c76898db580695a9724eaf09ddd61c",
+  "sha256": "867ad33d869c3a34cad8e928489655a20f0822ed7abec402bdc7ee5c093a1ace",
+  "vintage_status": "Current downloaded snapshot; historical publication vintages not verified",
+  "rights_note": "US Federal Reserve Board government statistical series; preserve source attribution; no third-party model weights included"
+}
