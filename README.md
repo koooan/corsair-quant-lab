@@ -2,7 +2,7 @@
 
 Learn to build software by shipping one financial-AI experiment every week.
 
-**Cadence:** 16 releases, September 18–December 31, 2026. **Time budget:** 6–8 hours a week. **Format:** public GitHub release, executed Jupyter notebook, interactive marimo notebook, and a short demo/readout.
+**Cadence:** weekly releases, with the current scope in the roadmap. **Time budget:** 6–8 hours a week. **Format:** public GitHub release, executed Jupyter notebook, interactive marimo notebook, and a short demo/readout.
 
 The capstone is a trained fixed-income research specialist, then a cross-asset research prototype, with asset-class distillation experiments. We will compare a specialist that delegates difficult work with a specialist that completes the same tasks without a frontier model. Neither path is presumed to win.
 
