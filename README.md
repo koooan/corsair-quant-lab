@@ -12,6 +12,7 @@ The capstone is **Multi-Asset Analyst**: a proposed investment-research assistan
 - [Bridgewater: public evidence and experiments](docs/BRIDGEWATER.md)
 - [Multi-Asset Analyst goals and TypeSafe experiment](docs/MULTI_ASSET_ANALYST.md)
 - [Capstone design and promotion gates](docs/CAPSTONE.md)
+- [Multi-Asset Research Benchmark design](docs/BENCHMARK.md)
 - [Evaluation rules](docs/EVALUATION.md)
 - [Project roster and access limits](docs/ROSTER.md)
 - [First release](releases/week-01.md)

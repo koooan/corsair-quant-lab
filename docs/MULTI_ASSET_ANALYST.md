@@ -67,6 +67,8 @@ Measure critical false acceptances, abstention/coverage, classification accuracy
 
 ## Human feedback and evaluation
 
+The [benchmark design](BENCHMARK.md) defines the proposed 100-task coverage, independent scoring, calibration tests, comparison tracks, and training/test separation. It includes public development examples; final tasks are not yet authored.
+
 Collect expert comparisons, corrections, and reasons with explicit permission for training use. Keep private uploads separate from opt-in contributions. Use numerical reference checks where correctness can be verified; distinguish verifiable rewards from human preferences. Jev may prioritize review or propose labels, but its judgments alone are AI feedback, not RLHF.
 
 Build training and development examples separately from the final 100 research tasks. Use only material with appropriate rights; private employer tasks and documents must not be copied into a public benchmark without permission. Freeze the final set before optimization, and report per-asset/task performance and uncertainty rather than only one overall score.

@@ -1,0 +1,37 @@
+{
+  "id": null,
+  "status": "draft",
+  "split": null,
+  "primary_asset": null,
+  "primary_skill": null,
+  "difficulty": null,
+  "lineage_group": null,
+  "reliability_overlay": null,
+  "prompt": null,
+  "answerable": null,
+  "valuation_time": null,
+  "evidence": [
+    {
+      "id": null,
+      "content_or_path": null,
+      "source_url": null,
+      "sha256": null,
+      "rights": null,
+      "available_at": null,
+      "vintage": null
+    }
+  ],
+  "permitted_tools": [],
+  "output_fields": [],
+  "mandatory_criteria": [],
+  "numeric_references": [],
+  "critical_errors": [],
+  "acceptable_abstention": null,
+  "quality_rubric": {},
+  "calibration_questions": [],
+  "review": {
+    "author": null,
+    "independent_reviewer": null,
+    "approved": false
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "version": "0.1.0-draft",
+  "status": "design_only",
+  "final_task_target": 100,
+  "coverage": {
+    "rates_and_sovereigns": {
+      "conventions_and_terms": 5,
+      "pricing_and_sensitivities": 5,
+      "scenarios_and_hedging": 5,
+      "evidence_based_research": 5,
+      "coding_and_model_validation": 5
+    },
+    "credit": {
+      "conventions_and_terms": 4,
+      "pricing_and_sensitivities": 4,
+      "scenarios_and_hedging": 4,
+      "evidence_based_research": 4,
+      "coding_and_model_validation": 4
+    },
+    "fx": {
+      "conventions_and_terms": 3,
+      "pricing_and_sensitivities": 3,
+      "scenarios_and_hedging": 3,
+      "evidence_based_research": 3,
+      "coding_and_model_validation": 3
+    },
+    "commodities": {
+      "conventions_and_terms": 3,
+      "pricing_and_sensitivities": 3,
+      "scenarios_and_hedging": 3,
+      "evidence_based_research": 3,
+      "coding_and_model_validation": 3
+    },
+    "hybrids": {
+      "conventions_and_terms": 3,
+      "pricing_and_sensitivities": 3,
+      "scenarios_and_hedging": 3,
+      "evidence_based_research": 3,
+      "coding_and_model_validation": 3
+    },
+    "cross_asset_portfolios": {
+      "conventions_and_terms": 2,
+      "pricing_and_sensitivities": 2,
+      "scenarios_and_hedging": 2,
+      "evidence_based_research": 2,
+      "coding_and_model_validation": 2
+    }
+  },
+  "difficulty_targets": {
+    "foundational": 30,
+    "multi_step": 50,
+    "specialist": 20
+  },
+  "disjoint_reliability_overlays": {
+    "missing_inputs": 10,
+    "conflicting_or_stale_sources": 5,
+    "unavailable_or_incompatible_tools": 5
+  },
+  "primary_track": "common_tools",
+  "primary_metric": "mandatory_criteria_success_rate",
+  "calibration_questions_per_task": 3,
+  "budgets": {
+    "max_input_tokens": null,
+    "max_output_tokens": null,
+    "max_tool_calls": null,
+    "max_seconds": null,
+    "max_usd_per_task": null
+  },
+  "model_versions": [],
+  "primary_baseline": null,
+  "final_set_custodian": null,
+  "final_manifest_hash": null,
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 1729,
+    "unit": "task_or_shared_lineage_cluster"
+  }
+}

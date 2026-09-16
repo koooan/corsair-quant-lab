@@ -1,0 +1,198 @@
+[
+  {
+    "id": "DEV-SYN-001",
+    "primary_asset": "rates_and_sovereigns",
+    "primary_skill": "pricing_and_sensitivities",
+    "difficulty": "foundational",
+    "lineage_group": "synthetic-two-cashflow-pv",
+    "prompt": "Value two certain cash flows: USD 5 exactly one year from valuation and USD 105 exactly two years from valuation. Use a flat 5% effective annual discount rate, annual compounding, and PV=sum(CF_t/(1+r)^t). Ignore accrued interest, taxes, and transaction costs. Then reprice at 6% and report shocked PV minus initial PV in USD, with a short explanation. Do not infer a market forecast.",
+    "answerable": true,
+    "output_fields": [
+      "pv_usd",
+      "shocked_pv_usd",
+      "change_usd",
+      "explanation"
+    ],
+    "mandatory_criteria": [
+      "Apply the supplied annual-compounding formula to both cash flows at each rate.",
+      "Report both PVs and shocked-minus-initial change within reference tolerances.",
+      "Explain why the value falls when the discount rate rises, holding cash flows fixed."
+    ],
+    "numeric_references": [
+      {
+        "field": "pv_usd",
+        "value": 100.0,
+        "unit": "USD",
+        "absolute_tolerance": 0.005
+      },
+      {
+        "field": "shocked_pv_usd",
+        "value": 98.16660733357067,
+        "unit": "USD",
+        "absolute_tolerance": 0.005
+      },
+      {
+        "field": "change_usd",
+        "value": -1.83339266642933,
+        "unit": "USD",
+        "absolute_tolerance": 0.005
+      }
+    ],
+    "critical_errors": [
+      "Reverse the sign of shocked-minus-initial change.",
+      "Treat the 1 percentage-point shock as a 1% relative rate increase."
+    ],
+    "acceptable_abstention": false,
+    "calibration_questions": [
+      {
+        "proposition": "The supplied formula uses annual compounding.",
+        "label": 1
+      },
+      {
+        "proposition": "A continuous-compounding formula directly implements the specified method.",
+        "label": 0
+      },
+      {
+        "proposition": "The supplied data are sufficient for the requested deterministic valuation.",
+        "label": 1
+      }
+    ],
+    "status": "draft_unreviewed",
+    "split": "public_development",
+    "evidence_origin": "self_contained_synthetic_example",
+    "rights": "Original illustrative task authored for this repository; no employer material.",
+    "permitted_tools": [
+      "calculator_or_python_in_common_tools_track"
+    ],
+    "review": {
+      "author": "AI-assisted draft",
+      "independent_reviewer": null,
+      "approved": false
+    }
+  },
+  {
+    "id": "DEV-SYN-002",
+    "primary_asset": "hybrids",
+    "primary_skill": "conventions_and_terms",
+    "difficulty": "specialist",
+    "lineage_group": "synthetic-missing-dividend-formula",
+    "reliability_overlay": "missing_inputs",
+    "prompt": "Synthetic terms: conversion price USD 50. Cash dividends above a stated threshold trigger a conversion-price adjustment under Section 7. Section 7 and the threshold are absent. The issuer announces a USD 2 dividend. Tool plain_convertible_v1 explicitly does not support contractual dividend adjustments. Determine the adjusted conversion price and whether this tool can price the instrument as specified. Use only this packet.",
+    "answerable": false,
+    "output_fields": [
+      "adjusted_conversion_price",
+      "missing_inputs",
+      "tool_eligible",
+      "explanation"
+    ],
+    "mandatory_criteria": [
+      "State that an exact adjusted conversion price cannot be determined.",
+      "Request the contractual threshold and Section 7 adjustment formula/definitions.",
+      "Reject the supplied tool for pricing the contractual adjustment as specified."
+    ],
+    "numeric_references": [],
+    "critical_errors": [
+      "Invent a threshold or adjustment formula.",
+      "Give a definitive adjusted conversion price.",
+      "Claim plain_convertible_v1 supports the specified contractual adjustment."
+    ],
+    "acceptable_abstention": "Abstain from the numerical adjustment while answering the tool-eligibility question and identifying missing contractual terms.",
+    "calibration_questions": [
+      {
+        "proposition": "The packet states that some dividends trigger a conversion-price adjustment.",
+        "label": 1
+      },
+      {
+        "proposition": "The supplied tool explicitly supports the contractual adjustment.",
+        "label": 0
+      },
+      {
+        "proposition": "The packet determines a unique numerical adjusted conversion price.",
+        "label": 0
+      }
+    ],
+    "status": "draft_unreviewed",
+    "split": "public_development",
+    "evidence_origin": "self_contained_synthetic_example",
+    "rights": "Original illustrative task authored for this repository; no employer material.",
+    "permitted_tools": [
+      "calculator_or_python_in_common_tools_track"
+    ],
+    "review": {
+      "author": "AI-assisted draft",
+      "independent_reviewer": null,
+      "approved": false
+    }
+  },
+  {
+    "id": "DEV-SYN-003",
+    "primary_asset": "fx",
+    "primary_skill": "scenarios_and_hedging",
+    "difficulty": "foundational",
+    "lineage_group": "synthetic-eur-usd-quote-units",
+    "prompt": "You hold a fixed EUR 1,000,000 cash balance. The initial quote is 1.10 USD per EUR and the scenario quote is 1.05 USD per EUR. Ignore interest, fees, and other cash flows. Report initial USD value, scenario USD value, and the change in USD. Explain the direction using the stated quote convention; no trade recommendation is requested.",
+    "answerable": true,
+    "output_fields": [
+      "initial_usd",
+      "scenario_usd",
+      "change_usd",
+      "explanation"
+    ],
+    "mandatory_criteria": [
+      "Multiply the EUR balance by USD per EUR at each quote.",
+      "Report USD 1,100,000 initially, USD 1,050,000 in the scenario, and change of USD -50,000.",
+      "Explain that fewer USD per EUR reduces the USD value of the fixed EUR balance."
+    ],
+    "numeric_references": [
+      {
+        "field": "initial_usd",
+        "value": 1100000,
+        "unit": "USD",
+        "absolute_tolerance": 0.01
+      },
+      {
+        "field": "scenario_usd",
+        "value": 1050000,
+        "unit": "USD",
+        "absolute_tolerance": 0.01
+      },
+      {
+        "field": "change_usd",
+        "value": -50000,
+        "unit": "USD",
+        "absolute_tolerance": 0.01
+      }
+    ],
+    "critical_errors": [
+      "Invert the supplied quote while retaining the original units.",
+      "Report a positive USD change."
+    ],
+    "acceptable_abstention": false,
+    "calibration_questions": [
+      {
+        "proposition": "The quotes are expressed in USD per EUR.",
+        "label": 1
+      },
+      {
+        "proposition": "Dividing EUR holdings by the quoted number gives their USD value.",
+        "label": 0
+      },
+      {
+        "proposition": "The supplied information determines the requested USD change.",
+        "label": 1
+      }
+    ],
+    "status": "draft_unreviewed",
+    "split": "public_development",
+    "evidence_origin": "self_contained_synthetic_example",
+    "rights": "Original illustrative task authored for this repository; no employer material.",
+    "permitted_tools": [
+      "calculator_or_python_in_common_tools_track"
+    ],
+    "review": {
+      "author": "AI-assisted draft",
+      "independent_reviewer": null,
+      "approved": false
+    }
+  }
+]
