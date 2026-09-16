@@ -19,6 +19,20 @@ Build a reliability-first assistant for fundamental and quantitative investment 
 
 These are capstone goals, not a one-week delivery commitment at 6–8 hours per week. The week-two milestone remains a bounded prototype.
 
+## Training corpus: Curvy-CUSIPs
+
+The user has selected [our Curvy-CUSIPs fork](https://github.com/koooan/Curvy-CUSIPs) as a source for the Multi-Asset Analyst training corpus. It is not yet ingested or converted into training examples. GitHub identifies the repository license as [MIT](https://github.com/koooan/Curvy-CUSIPs/blob/main/LICENSE); preserve attribution and license notices in redistributed source material and check any separately sourced data or documents before inclusion.
+
+Curate relevant code, documentation, and notebook workflows into explanatory examples, tool-use demonstrations, and executable quantitative exercises. Record each example's source commit and path, transformations, and validation results. Validate numerical answers independently; code appearing in a repository is not automatically a correct reference answer. Keep changing market observations in dated retrieval sources rather than presenting them as timeless model knowledge.
+
+Split related notebooks, code variants, and derived questions together to prevent near-duplicate training/test leakage. The final research benchmark must remain independent of training examples.
+
+## Training direction: human feedback and calibrated decisions
+
+Explore both human-feedback learning and calibration-oriented decision training. The TypeSafe article calls Jev's method **RLCD: Reinforcement Learning for Calibrated Decisions**, not RLCI. The announcement does not provide a complete reproducible training recipe, so our proposed experiment should be described as RLCD-inspired until an exact implementation and evidence justify a stronger claim. Calling the Jev API is distinct from training our own model this way.
+
+For the initial calibration experiment, use labeled instrument-feature and tool-eligibility questions, require probability outputs, and evaluate with proper scoring rules such as Brier score or log loss on held-out examples. Compare the supervised baseline, any subsequent reinforcement-learning variant, and a post-hoc calibration baseline. Proper scoring rules alone do not establish that an experiment reproduces Jev's RLCD. Assess both accuracy and calibration, including critical errors versus abstention coverage. Human preferences continue to inform research usefulness, explanations, and corrections; executable checks assess numerical correctness.
+
 ## Model versus system
 
 Keep three configurations measurable: the small analyst alone, the analyst with numerical tools/retrieval, and the analyst that can also delegate to a frontier model. Report all external dependencies, call rates, latency, and total cost. An assisted system's score is not the standalone student's score.
